@@ -1,0 +1,27 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap');
+
+// Bulma
+// 1. Import the initial variables
+// @import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Variables
+@import "lib/variables";
+@import "~bulma/bulma.sass";
+@import "helpers";
+
+// custom style
+html { background: rgba(253,226,226,0.5); }
+body{
+    background: transparent;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    min-height: 100%;
+    padding: 0;
+}
+.section {
+    &.pb-0 {
+        padding-bottom: 0 !important;
+    }
+}
