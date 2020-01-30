@@ -2407,10 +2407,10 @@ export default {
       TweenMax.set(".decor.is-right .path-dot-3", { autoAlpha: 0 })
       TweenMax.staggerTo('.decor.is-right .path', 1.5, { autoAlpha: 1, ease: Linear.easeNone }, 0.1, ()=>{
         // all complete
-        TweenMax.staggerTo('.decor.is-right .path-dot', 2.5, { autoAlpha: 1, scale:1.5, ease: Bounce.out, repeat: -1, yoyo: true }, '-=0.5');
-        TweenMax.staggerTo('.decor.is-right .path-dot-2', 2, { autoAlpha: 1, ease: Linear.easeNone, repeat: -1, yoyo: true });
-        TweenMax.staggerTo('.decor.is-right .path-dot-3', 2.5, { autoAlpha: 1, scale: 1.5, ease: Linear.easeNone, repeat: -1, yoyo: true });
-        TweenMax.staggerTo('.decor.is-right .path', 1.5, { rotate: '+=5', transformOrigin:"top right", ease: Linear.easeNone, repeat: -1, yoyo: true, stagger:0.2 });
+        TweenMax.staggerTo('.decor.is-right .path-dot', 2.5, { autoAlpha: 1, scale:1.5, ease: Bounce.out, repeat: -1, yoyo: true, force3D: true }, '-=0.5');
+        TweenMax.staggerTo('.decor.is-right .path-dot-2', 2, { autoAlpha: 1, ease: Linear.easeNone, repeat: -1, yoyo: true, force3D: true });
+        TweenMax.staggerTo('.decor.is-right .path-dot-3', 2.5, { autoAlpha: 1, scale: 1.5, ease: Linear.easeNone, repeat: -1, yoyo: true, force3D: true });
+        TweenMax.staggerTo('.decor.is-right .path', 1.5, { rotate: '+=5', transformOrigin:"top right", ease: Linear.easeNone, repeat: -1, yoyo: true, force3D: true, stagger:0.2 });
       })
     }
   }
