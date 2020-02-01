@@ -210,6 +210,7 @@ export default {
 <style lang='scss' scoped>
   $stroke-color: #C97E29;
   .wedding_name {
+    padding-top: 0;
     svg {
       width: 100%;
     }

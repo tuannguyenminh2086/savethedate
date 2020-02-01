@@ -51,6 +51,40 @@ export default {
         .to(this.$refs.moments, 1, { opacity: 1, y: 0, ease: Power4.easeOut, onComplete: () => { this.step3 = true } })
     }
   },
+  metaInfo: {
+    // Children can override the title.
+    title: 'TUNA LOVE SEA',
+    // Result: My Page Title ← My Site
+    // If a child changes the title to "My Other Page Title",
+    // it will become: My Other Page Title ← My Site
+    titleTemplate: '%s ← Save the date',
+    // Define meta tags here.
+    meta: [
+      {name: 'description', content: 'We are getting married'},
+      // OpenGraph data (Most widely used)
+      {property: 'og:title', content: 'Save the date ← TunaloveSea'},
+      {property: 'og:site_name', content: 'TunaloveSea'},
+      // The list of types is available here: http://ogp.me/#types
+      {property: 'og:type', content: 'website'},
+      // Should the the same as your canonical link, see below.
+      {property: 'og:url', content: 'https://tunalovesea.com/'},
+      {property: 'og:image', content: 'https://tunalovesea.com/img/thumbnail.jpg'},
+      // Often the same as your meta description, but not always.
+      {property: 'og:description', content: 'We are getting married.'},
+      // Twitter card
+      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:site', content: 'https://tunalovesea.com/'},
+      {name: 'twitter:title', content: 'Save the date ← TunaloveSea'},
+      {name: 'twitter:description', content: 'We are getting married.'},
+      // Your twitter handle, if you have one.
+      {name: 'twitter:creator', content: '@tuannguyenminh'},
+      {name: 'twitter:image:src', content: 'https://tunalovesea.com/img/thumbnail.jpg'},
+      // Google / Schema.org markup:
+      {itemprop: 'name', content: 'Save the date ← TunaloveSea'},
+      {itemprop: 'description', content: 'We are getting married.'},
+      {itemprop: 'image', content: 'https://tunalovesea.com/img/thumbnail.jpg'}
+    ]
+  }
 }
 </script>
 <style lang="scss">

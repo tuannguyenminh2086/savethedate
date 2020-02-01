@@ -2,7 +2,7 @@
   <div id="moments" class="section has-text-centered moments">
     <div class="columns is-centered">
       <div class="column is-half has-text-centered">
-          <h2 class="title is-4">Share your moment with us via Instagram</h2>
+          <h2 class="title is-4">Our Moments via Instagram</h2>
           <h3 class="subtitle is-3"><span class="has-text-danger">#tunalovesea</span></h3>
       </div>
     </div>
@@ -35,7 +35,7 @@ export default {
     return {
       token: '43960542.1677ed0.4389d3854d3b47ebbfdc1c79c56bc4dd',
       count: 100,
-      tags: ['beautiful'],
+      tags: ['tunalovesea'],
       mediaType: 'image',
       error: '',
       loading: false,
